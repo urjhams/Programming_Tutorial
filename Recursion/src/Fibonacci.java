@@ -4,16 +4,17 @@ public class Fibonacci {
     System.out.println("Enter the number:");
     Scanner scan = new Scanner(System.in);
     int a = scan.nextInt();
+    printFibonaci(a);
   }
 
-  private static void printFibonaci(int range) {
+  private void printFibonaci(int range) {
     for (int start = 0; start < range; start ++) {
       System.out.println(initFibonaci(start));
       System.out.print("  ");
     }
   }
 
-  private static int initFibonaci(int range) {
+  private int initFibonaci(int range) {
     switch (range) {
       case 0:
         return 0;
