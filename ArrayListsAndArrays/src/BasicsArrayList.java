@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class BasicsArrayList {
 //beginner
@@ -7,8 +8,20 @@ public class BasicsArrayList {
 	//-write a method which prints all the values in an ArrayList
 
 	public static void main(String[] args) {
-		
+		ArrayList<String> myList = new ArrayList<>();
+		appendInto(myList, "one");
+		printOut(myList);
+	}
+	private static void appendInto(ArrayList<String> input, String value) {
+		int current = input.size();
+		input.add(current, value);
+		// cannot use set method cause cannot set the size of an ArrayList -> OutBoundException
 	}
 
+	private static void printOut(ArrayList<String> input) {
+		for (String item : input) {
+			System.out.println(item);
+		}
+	}
 
 }
