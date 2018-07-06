@@ -26,7 +26,11 @@ public class SolarSystemDriver {
 
 	public static void main(String[] args) {
 		for (Planet planet : Planet.values()) {
-			System.out.println("Planet: " + planet + " mass: " + planet.getMass() + " radius: " + planet.getRadius() + " gravity: " + planet.getGravity());
+			System.out.println("Planet: " +
+													planet + " mass: " +
+													planet.getMass() + " radius: " +
+													planet.getRadius() + " gravity: " +
+													planet.getGravity());
 		}
 	}
 	private enum Planet {
