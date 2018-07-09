@@ -1,7 +1,7 @@
 import Foundation
 
 /*Todo: Create an enum with all Planets in the Solarsystem as
- *allowed input types.
+ *allowed input types (in SWIFT).
  * Also save mass and radius of the planets. Here are the needed
  * values:
  *
@@ -91,3 +91,6 @@ enum Planet: RawRepresentable {
 for value in Planet.allValues {
     print("name: \(value.rawValue.name)\n\tmass: \(value.rawValue.mass)\n\tradius: \(value.rawValue.radius)\n\tgravity: \(value.gravity)\n")
 }
+/*--------------- for using with CaseIterable protocol in swfit 4.2 (xcode 10)
+for value in Planet.allCases
+*/

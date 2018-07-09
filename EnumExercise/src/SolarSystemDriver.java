@@ -1,4 +1,3 @@
-
 public class SolarSystemDriver {
 
 	/*Todo: Create an enum with all Planets in the Solarsystem as
